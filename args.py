@@ -3,11 +3,11 @@ from argparse import Namespace
 import torch
 
 args = Namespace(
-    batch_size=128,
+    batch_size=120,
     device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
-    debug=True,
+    debug=False,
     max_epoch=40,
-    learning_rate=0.0001,
+    learning_rate=0.001,
 
     embed_size=128,
     dropout=0.1,
